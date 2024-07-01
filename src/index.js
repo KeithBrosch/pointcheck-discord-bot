@@ -26,12 +26,14 @@ client.on('messageCreate', (message) => {
 client.on('interactionCreate', (interaction) => {
   if (!interaction.isChatInputCommand()) return;
 
-  if (interaction.commandName === 'add') {
-    const num1 = interaction.options.get('first-number')?.value;
-    const num2 = interaction.options.get('second-number')?.value;
+  if (interaction.commandName === 'pointcheck') {
+    const user1 = interaction.options.get('first-user')?.value;
+    const user2 = interaction.options.get('second-user')?.value;
     
     
-    interaction.reply(`The sum is ${num1 + num2}`);
+    // interaction.reply(`The sum is ${num1 + num2}`);
+    
+    console.log(user1, user2);
   };
 
 });

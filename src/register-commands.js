@@ -3,19 +3,19 @@ const { REST, Routes, ApplicationCommandOptionType } = require('discord.js')
 
 const commands = [
   {
-    name: 'add',
-    description: 'adds two numbers',
+    name: 'pointcheck',
+    description: 'point check',
     options: [
       {
-        name: 'first-number',
-        description: 'the first number',
-        type: ApplicationCommandOptionType.Number,
+        name: 'first-user',
+        description: 'the first user',
+        type: ApplicationCommandOptionType.User,
         required: true
       },
       {
-        name: 'second-number',
-        description: 'the second number',
-        type: ApplicationCommandOptionType.Number,
+        name: 'second-user',
+        description: 'the second user',
+        type: ApplicationCommandOptionType.User,
         required: true
       }
     ]
